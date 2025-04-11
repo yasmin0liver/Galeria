@@ -1,135 +1,126 @@
-/* styles.css */
-
-/* Resetando margens e preenchimento */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Importando a fonte do Jurassic Park */
 @font-face {
-    font-family: 'JurassicPark';
-    src: url('fonts/jurassicpark.woff2') format('woff2'),
-         url('fonts/jurassicpark.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Jurassic';
+    src: url('./fontes/JurassicPark-BL48.ttf') format('truetype');
 }
+
 
 body {
-    font-family: 'JurassicPark', Arial, sans-serif;  /* Fonte do Jurassic Park */
-    background-color: #1c1c1c;
-    color: white;
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    background-color: #000;
+    color: #fff;
 }
 
 header {
-    background-color: #4d0000;  /* Tom de vermelho mais escuro */
-    color: white;
-    padding: 20px 0;
+    background-color: #b30000;
     text-align: center;
-    border-bottom: 5px solid #330000;
+    padding: 30px 10px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+header h1 {
+    font-family: 'Jurassic', sans-serif;
+    margin: 0;
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000; 
+
 }
 
-nav {
-    background-color: #330000;
-    text-align: center;
-}
 
-nav ul {
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #4d0000;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-main {
-    padding: 30px 20px;
+header p {
+    font-family: 'Jurassic', sans-serif;
+    margin-top: 10px;
+    font-size: 30px;    
+    text-shadow: 2px 2px 4px #000; 
 }
 
 section {
-    margin-bottom: 40px;
-    border: 2px solid #4d0000;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #333333;
+    padding: 30px 20px;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: #4d0000;
-    text-align: center;
-    font-size: 1.8rem;
+section h2 {
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 10px;
     margin-bottom: 20px;
+    font-size: 32px;
 }
 
-.gallery {
+.galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.item {
-    width: 220px;
+.dino {
+    background-color: #111;
+    border: 2px solid #b30000;
+    padding: 15px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
     text-align: center;
-    background-color: #444444;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s;
 }
 
-.item img {
-    width: 200px;   /* Tamanho padrão definido */
-    height: 150px;  /* Altura padrão definida */
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.item p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-}
-
-.item:hover {
+.dino:hover {
     transform: scale(1.05);
-    background-color: #5c5c5c;
+    border-color: #ff1a1a;
+}
+
+.dino img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.dino h3 {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-family: 'Verdana', sans-serif; 
+}
+
+@media (max-width: 768px) {
+    .dino {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 500px) {
+    .dino {
+        width: 100%;
+    }
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #b30000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff1a1a;
 }
 
 footer {
-    background-color: #4d0000;
-    color: white;
-    padding: 10px 0;
+    background-color: #1a1a1a;
+    color: #ccc;
     text-align: center;
+    padding: 20px;
     margin-top: 40px;
+    font-size: 14px;
+    border-top: 2px solid #b30000;
 }
 
 footer p {
-    font-size: 1rem;
-    letter-spacing: 1px;
+    margin: 5px 0;
 }
-

@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importando a fonte do Jurassic Park */
+@font-face {
+    font-family: 'JurassicPark';
+    src: url('fonts/jurassicpark.woff2') format('woff2'),
+         url('fonts/jurassicpark.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'JurassicPark', Arial, sans-serif;  /* Fonte do Jurassic Park */
+    background-color: #1c1c1c;
+    color: white;
+}
+
+header {
+    background-color: #4d0000;  /* Tom de vermelho mais escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #330000;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    background-color: #330000;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #4d0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    border: 2px solid #4d0000;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #4d0000;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    width: 220px;
+    text-align: center;
+    background-color: #444444;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.item img {
+    width: 200px;   /* Tamanho padrão definido */
+    height: 150px;  /* Altura padrão definida */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    background-color: #5c5c5c;
+}
+
+footer {
+    background-color: #4d0000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+

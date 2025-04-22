@@ -1,9 +1,106 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+    head>
     <meta charset="UTF-8">
     <title>Galeria de Dinossauros - Jurassic World</title>
-    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            background-color: #0d0d0d; /* preto escuro */
+            color: #f0e6e6; /* branco suave */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #5a2a0c; /* marrom escuro */
+            color: #ffa500; /* laranja */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        h2 {
+            background-color: #8b0000; /* vermelho escuro */
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .galeria {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             gap: 20px;
+             padding: 20px;
+        }
+
+
+        .dino {
+             background-color: #1a1a1a;
+             border: 2px solid #ff4500;
+             border-radius: 15px;
+             width: 200px;
+             padding: 15px;
+             text-align: center;
+             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+             transition: transform 0.3s, background-color 0.3s;
+         }
+
+        .dino:hover {
+             transform: scale(1.05);
+            background-color: #2a2a2a;
+        }   
+
+        img {
+             width: 100%;
+            max-width: 160px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+         }
+
+
+         .dino h3 {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 1.1rem;
+        }
+
+
+        nav {
+            background-color: #2f1b0c;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #ffa500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ff6347;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,184 +112,184 @@
         <h2>Dinossauros Terrestres</h2>
         <div class="galeria">
             <div class="dino">
-                <img src="imagens/t-rex.png" alt="Tyrannosaurus Rex">
+                <img src="{% static 't-rex.png' %}" alt="Tyrannosaurus Rex">
                 <h3>Tyrannosaurus Rex</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Velociraptors.png" alt="Velociraptor">
+                <img src="{% static 'Velociraptors.png' %}" alt="Velociraptor">
                 <h3>Velociraptor</h3>
             </div>
             <div class="dino">
-                <img src="imagens/estegossauro.png" alt="Estegossauro">
+                <img src="{% static 'estegossauro.png' %}" alt="Estegossauro">
                 <h3>Estegossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/estigmoloch.png" alt="Estigmoloch">
+                <img src="{% static 'estigmoloch.png' %}" alt="Estigmoloch">
                 <h3> Estigmoloch</h3>
             </div>
             <div class="dino">
-                <img src="imagens/dilofossauro.png" alt="Dilofossauro">
+                <img src="{% static 'dilofossauro.png' %}" alt="Dilofossauro">
                 <h3>Dilofossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/alossauro.png" alt="Alossauro">
+                <img src="{% static 'alossauro.png' %}" alt="Alossauro">
                 <h3>Alossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/anquilossauro.png" alt="Anquilossauro">
+                <img src="{% static 'anquilossauro.png' %}" alt="Anquilossauro">
                 <h3>Anquilossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/apatossauro.png" alt="Apatossauro">
+                <img src="{% static 'apatossauro.png' %}" alt="Apatossauro">
                 <h3>Apatossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Barionix.png" alt="Barionix">
+                <img src="{% static 'Barionix.png' %}" alt="Barionix">
                 <h3>Barionix</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Braquiossauro.png" alt="Braquiossauro">
+                <img src="{% static 'Braquiossauro.png' %}" alt="Braquiossauro">
                 <h3>Braquiossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/carnotauro.png" alt="Carnotauro">
+                <img src="{% static 'carnotauro.png' %}" alt="Carnotauro">
                 <h3>Carnotauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/ceratossauro.png" alt="Ceratossauro">
+                <img src="{% static 'ceratossauro.png' %}" alt="Ceratossauro">
                 <h3>Ceratossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Compsognathus.png" alt="Compsognato">
+                <img src="{% static 'Compsognathus.png' %}" alt="Compsognato">
                 <h3>Compsognato</h3>
             </div>
             <div class="dino">
-                <img src="imagens/espinossauro.png" alt="Espinossauro">
+                <img src="{% static 'espinossauro.png' %}" alt="Espinossauro">
                 <h3>Espinossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/galimimos.png" alt="Galimimo">
+                <img src="{% static 'galimimos.png' %}" alt="Galimimo">
                 <h3>Galimimo</h3>
             </div>
             <div class="dino">
-                <img src="imagens/mamenquissauro.png" alt="Mamenquissauro">
+                <img src="{% static 'mamenquissauro.png' %}" alt="Mamenquissauro">
                 <h3>Mamenquissauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/parassaurolofo.png" alt="Parassaurolofo">
+                <img src="{% static 'parassaurolofo.png' %}" alt="Parassaurolofo">
                 <h3>Parassaurolofo</h3>
             </div>
             <div class="dino">
-                <img src="imagens/sinoceratops.png" alt="Sinoceratops">
+                <img src="{% static 'sinoceratops.png' %}" alt="Sinoceratops">
                 <h3>Sinoceratops</h3>
             </div>
             <div class="dino">
-                <img src="imagens/triceratops.png" alt="Triceratops">
+                <img src="{% static 'triceratops.png' %}" alt="Triceratops">
                 <h3>Triceratops</h3>
             </div>
             <div class="dino">
-                <img src="imagens/pachycephalosaurus.png" alt="paquicefalossauro">
+                <img src="{% static 'pachycephalosaurus.png' %}" alt="paquicefalossauro">
                 <h3>Paquicefalossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Giganotossauro.png" alt="Giganotossauro">
+                <img src="{% static 'Giganotossauro.png' %}" alt="Giganotossauro">
                 <h3>Giganotossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Dimetrodon.png" alt="Dimetrodon">
+                <img src="{% static 'Dimetrodon.png' %}" alt="Dimetrodon">
                 <h3>Dimetrodon</h3>
             </div>
             <div class="dino">
-                <img src="imagens/edmontossauro.png" alt="Edmontossauro">
+                <img src="{% static 'edmontossauro.png' %}" alt="Edmontossauro">
                 <h3>Edmontossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Dreadnoughtus.png" alt="Dreadnoughtus">
+                <img src="{% static 'Dreadnoughtus.png' %}" alt="Dreadnoughtus">
                 <h3>Dreadnoughtus</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Oviraptor.png" alt="Oviraptor">
+                <img src="{% static 'Oviraptor.png' %}" alt="Oviraptor">
                 <h3>Oviraptor</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Moros.png" alt="Moros">
+                <img src="{% static 'Moros.png' %}" alt="Moros">
                 <h3>Moros</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Microceratus.png" alt="Microceratus">
+                <img src="{% static 'Microceratus.png' %}" alt="Microceratus">
                 <h3>Microceratus</h3>
             </div>
             <div class="dino">
-                <img src="imagens/listrossaurus.png" alt="Listrossaurus">
+                <img src="{% static 'listrossaurus.png' %}" alt="Listrossaurus">
                 <h3>Listrossaurus</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Terezinossauro.png" alt="Terezinossauro">
+                <img src="{% static 'therizinossaurus.png' %}" alt="Terizinossauro">
                 <h3>Terezinossauro</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Teratophoneus.png" alt="Teratophoneus">
+                <img src="{% static 'Teratophoneus.png' %}" alt="Teratophoneus">
                 <h3>Teratophoneus</h3>
             </div>
             <div class="dino">
-                <img src="imagens/iguanodon.png" alt="Iguanodon">
+                <img src="{% static 'iguanodon.png' %}" alt="Iguanodon">
                 <h3>Iguanodon</h3>
             </div>
             <div class="dino">
-                <img src="imagens/Pyrraptor.png" alt="Pyroraptor">
+                <img src="{% static 'Pyrraptor.png' %}" alt="Pyroraptor">
                 <h3>Pyroraptor</h3>
             </div>
         </div>
-    </section>
+        
+        
 
-    <section>
-        <h2>Répteis Voadores</h2>
-        <div class="galeria">
-            <div class="dino">
-                <img src="imagens/Pteranodon.png" alt="Pteranodon">
-                <h3>Pteranodon</h3>
+        <section>
+            <h2>Répteis Voadores</h2>
+            <div class="galeria">
+                <div class="dino">
+                    <img src="{% static 'Pteranodon.png' %}" alt="Pteranodon">
+                    <h3>Pteranodon</h3>
+                </div>
+                <div class="dino">
+                    <img src="{% static 'Dimorphodon.png' %}" alt="Dimorphodon">
+                    <h3>Dimorphodon</h3>
+                </div>
+                <div class="dino">
+                    <img src="{% static 'Quetzalcoatlus.png' %}" alt="Quetzalcoatlus">
+                    <h3>Quetzalcoatlus</h3>
+                </div>
             </div>
-            <div class="dino">
-                <img src="imagens/Dimorphodon.png" alt="Dimorphodon">
-                <h3>Dimorphodon</h3>
+        </section>
+        
+        <section>
+            <h2>Espécies Aquáticas</h2>
+            <div class="galeria">
+                <div class="dino">
+                    <img src="{% static 'mosasaurus.png' %}" alt="Mosasaurus">
+                    <h3>Mosasaurus</h3>
+                </div>
             </div>
-            <div class="dino">
-                <img src="imagens/Quetzalcoatlus.png" alt="Quetzalcoatlus">
-                <h3>Quetzalcoatlus</h3>
+        </section>
+        
+        <section>
+            <h2>Criaturas Híbridas</h2>
+            <div class="galeria">
+                <div class="dino">
+                    <img src="{% static 'Indominusrex.png' %}" alt="Indominus-rex">
+                    <h3>Indominus-rex</h3>
+                </div>
+                <div class="dino">
+                    <img src="{% static 'scorpiusrex.png' %}" alt="Scorpius-rex">
+                    <h3>Scorpius-rex</h3>
+                </div>
+                <div class="dino">
+                    <img src="{% static 'indoraptor.png' %}" alt="Indoraptor">
+                    <h3>Indoraptor</h3>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
 
-    <section>
-        <h2>Espécies Aquáticas</h2>
-        <div class="galeria">
-            <div class="dino">
-                <img src="imagens/mosasaurus.png" alt="Mosasaurus">
-                <h3>Mosasaurus</h3>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Criaturas Híbridas</h2>
-        <div class="galeria">
-            <div class="dino">
-                <img src="imagens/Indominusrex.png" alt="Indominus-rex">
-                <h3>Indominus-rex</h3>
-            </div>
-            <div class="dino">
-                <img src="imagens/scorpiusrex.png" alt="Scorpius-rex">
-                <h3>Scorpius-rex</h3>
-            </div>
-            <div class="dino">
-                <img src="imagens/indoraptor.png" alt="Indoraptor">
-                <h3>Indoraptor</h3>
-            </div>
-
-        </div>
-    </section>
-    <nav>
-        <a href="nos.html">👥 Sobre Nós</a>
-    </nav>
 </body>
 
 <footer>

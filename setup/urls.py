@@ -4,6 +4,8 @@ from JurassicDataBase import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('sobre/', views.sobre)  # Adicionei a barra final para consistência
+    path('', views.index, name='home'),
+    
+    path('sobre/', views.sobre),  # Adicionei a barra final para consistência
+    path('sobre/home', views.index),
 ]

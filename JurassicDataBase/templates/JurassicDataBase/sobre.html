@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,136 +13,135 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #ccc;
-            line-height: 1.6;
-            padding: 20px;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d; 
+    color: #f0e6e6; 
+    line-height: 1.6;
+    padding: 20px;
+}
 
-        header {
-            text-align: center;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #5a2a0c; 
+    color: #ffa500; 
+}
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #b30000;
-        }
+header h1 {
+    font-size: 2.5rem;
+    color: #ffa500;
+}
 
-        .sobre-nos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            padding: 40px 20px;
-            background-color: #222;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-        }
+.sobre-nos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
 
-        .foto {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid #b30000;
-        }
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff4500; 
+}
 
-        .foto img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        .texto {
-            max-width: 600px;
-            text-align: center;
-            color: #ccc;
-        }
+.texto {
+    max-width: 600px;
+    text-align: center;
+    color: #f0e6e6;
+}
 
-        .texto h2 {
-            font-size: 28px;
-            color: #fff;
-            border-bottom: 2px solid #b30000;
-            padding-bottom: 10px;
-        }
+.texto h2 {
+    font-size: 28px;
+    color: #ffa500;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 10px;
+}
 
-        .texto p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+.texto p {
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-        .descricao-projeto {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
+.descricao-projeto {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
 
-        .descricao-projeto h3 {
-            font-size: 24px;
-            color: #fff;
-            border-bottom: 2px solid #b30000;
-            padding-bottom: 10px;
-        }
+.descricao-projeto h3 {
+    font-size: 24px;
+    color: #ffa500;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 10px;
+}
 
-        .descricao-projeto p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #ccc;
-        }
+.descricao-projeto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0e6e6;
+}
 
-        .voltar-btn {
-            display: inline-block;
-            background-color: #b30000;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 16px;
-            margin-top: 20px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+.voltar-btn {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-        .voltar-btn:hover {
-            background-color: #ff1a1a;
-            transform: scale(1.05);
-        }
+.voltar-btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
 
-        .social-links {
-            margin-top: 30px;
-            text-align: center;
-        }
+.social-links {
+    margin-top: 30px;
+    text-align: center;
+}
 
-        .social-links a {
-            color: #b30000;
-            font-size: 20px;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s, transform 0.3s;
-        }
+.social-links a {
+    color: #ffa500;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
 
-        .social-links a:hover {
-            color: #ff1a1a;
-            transform: scale(1.1);
-        }
+.social-links a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
 
-        footer {
-            background-color: #1a1a1a;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 14px;
-            border-top: 2px solid #b30000;
-        }
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 2px solid #ff4500;
+}
 
-        footer p {
-            margin: 5px 0;
-        }
     </style>
 </head>
 <body>
@@ -153,7 +153,7 @@
     <main>
         <section class="sobre-nos">
             <div class="foto">
-                <img src="imagens/sobre.png" alt="participantes">
+                <img src="{% static 'sobre.png' %}" alt="participantes">
             </div>
             <div class="texto">
                 <h2>Sobre nós</h2>
@@ -171,9 +171,6 @@
             </p>
         </section>
 
-        <div class="voltar-btn-container">
-            <a href="index.html" class="voltar-btn">Voltar à Galeria Principal</a>
-        </div>
 
         <div class="social-links">
             <p>Yasmin:</p>
